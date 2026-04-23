@@ -1,85 +1,54 @@
-﻿# 🧲 Image Cover Cropper
+# image-cover-cropper
 
-[![CI](https://github.com/ShapArt/image-cover-cropper/actions/workflows/ci.yml/badge.svg)](https://github.com/ShapArt/image-cover-cropper/actions/workflows/ci.yml) [![license](https://img.shields.io/github/license/ShapArt/image-cover-cropper)](https://github.com/ShapArt/image-cover-cropper/blob/main/LICENSE)
+![License](https://img.shields.io/github/license/ShapArt/image-cover-cropper)
+![Last Commit](https://img.shields.io/github/last-commit/ShapArt/image-cover-cropper)
+![Language](https://img.shields.io/github/languages/top/ShapArt/image-cover-cropper)
 
-**Ключевые факты:**
+## EN Overview
+Smart cover cropper with saliency/face bias
 
-- 🧲 Saliency/face-bias для центрирования важного
+## RU Описание
+Smart cover cropper with saliency/face bias
 
-- 🎞️ Ограничение размера файла с бинарным поиском качества
+## EN Features
+- Clear project purpose and maintainable structure.
+- Standardized community and contribution files.
+- Consistent documentation style across account repositories.
 
-- 🖼️ Пресеты под маркетплейс/соцсети
+## RU Возможности
+- Понятная цель проекта и поддерживаемая структура.
+- Стандартизированные файлы сообщества и вклада.
+- Единый стиль документации во всех репозиториях аккаунта.
 
-<table>
+## EN Quick Start
+pip install -r requirements.txt
+python -m main
 
-<tr>
+## RU Быстрый старт
+pip install -r requirements.txt
+python -m main
 
-<td><b>✨ Что умеет</b><br/>Короткий список возможностей, ориентированных на ценность.</td>
+## EN Project Structure
+- .github/ - templates, policy files, CI config.
+- Source files and assets are stored in repository root or feature directories.
 
-<td><b>🧠 Технологии</b><br/>Стек, ключевые решения, нюансы безопасности.</td>
+## RU Структура проекта
+- .github/ - шаблоны, policy-файлы, конфиг CI.
+- Исходники и ресурсы находятся в корне или профильных директориях.
 
-<td><b>🖼️ Демо</b><br/>Скриншот/гиф или ссылка на Pages.</td>
+## EN Roadmap
+- Improve test coverage and automation.
+- Keep docs aligned with actual project behavior.
 
-</tr>
+## RU Планы
+- Расширять покрытие тестами и автоматизацией.
+- Поддерживать документацию в актуальном состоянии.
 
-</table>
+## EN Contributing
+See .github/CONTRIBUTING.md.
 
-> [!TIP]
+## RU Вклад
+См. .github/CONTRIBUTING.md.
 
-> Репозиторий оформлен по правилам: Conventional Commits, SemVer, CHANGELOG, SECURITY policy и CI.
-
-> Секреты — только через `.env`/секреты репозитория.
-
-<p align="left">
-
-  <img alt="build" src="https://img.shields.io/github/actions/workflow/status/ShapArt/image-cover-cropper/ci.yml?label=CI&logo=githubactions">
-
-  <img alt="license" src="https://img.shields.io/github/license/ShapArt/image-cover-cropper">
-
-  <img alt="last commit" src="https://img.shields.io/github/last-commit/ShapArt/image-cover-cropper">
-
-  <img alt="issues" src="https://img.shields.io/github/issues/ShapArt/image-cover-cropper">
-
-  <img alt="stars" src="https://img.shields.io/github/stars/ShapArt/image-cover-cropper?style=social">
-
-</p>
-
-Умный пакетный кроппер обложек с **saliency**, распознаванием лиц и текстовых зон.
-
-- Пресеты `product` / `people`
-
-- Два формата вывода (1920x1080 и 750x750)
-
-- Ограничение размера файла (байтов) с бинарным поиском качества
-
-- WEBP/JPG, PNG → JPG при необходимости
-
-## Запуск
-
-```bash
-
-
-python cropper.py --in ./input --out1 ./out/desktop --out2 ./out/mobile --format jpg --quality 92 --mode auto --max_bytes 1000000
-
-
-```
-
-## Быстрый старт
-
-_Заполнить по мере развития проекта._
-
-## Архитектура
-
-_Заполнить по мере развития проекта._
-
-## Конфигурация
-
-_Заполнить по мере развития проекта._
-
-## Тесты
-
-_Заполнить по мере развития проекта._
-
-## Roadmap
-
-_Заполнить по мере развития проекта._
+## License / Лицензия
+See LICENSE.
