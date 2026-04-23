@@ -2,9 +2,9 @@
 
 ![Social Preview](https://raw.githubusercontent.com/ShapArt/image-cover-cropper/main/.github/social-preview.png)
 
-[![Stars](https://img.shields.io/github/stars/ShapArt/=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/ShapArt/=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/commits/main)
-[![License](https://img.shields.io/github/license/ShapArt/=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/ShapArt/image-cover-cropper?style=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/ShapArt/image-cover-cropper?style=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/commits/main)
+[![License](https://img.shields.io/github/license/ShapArt/image-cover-cropper?style=for-the-badge)](https://github.com/ShapArt/image-cover-cropper/blob/main/LICENSE)
 
 ## RU
 **Слоган:** Кадрирование, которое продает
@@ -40,4 +40,5 @@ See .github/CONTRIBUTING.md.
 
 ## License
 See LICENSE.
+
 
