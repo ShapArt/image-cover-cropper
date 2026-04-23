@@ -1,52 +1,17 @@
-name: CI (Python)
+name: CI
 
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
-  lint_test:
+  basic-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Detect Python files
-        id: detect
-        shell: bash
-        run: |
-          if git ls-files '*.py' | grep -q .; then
-            echo "has_py=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "has_py=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Setup Python
-        if: steps.detect.outputs.has_py == 'true'
-        uses: actions/setup-python@v5
+      - name: Validate markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
-          python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install requirements (if present)
-        if: steps.detect.outputs.has_py == 'true' && hashFiles('**/requirements.txt') != ''
-        run: pip install -r requirements.txt
-
-      - name: Install basic tooling
-        if: steps.detect.outputs.has_py == 'true'
-        run: pip install ruff black pytest
-
-      - name: Lint (ruff) — non-blocking
-        if: steps.detect.outputs.has_py == 'true'
-        run: ruff check .
-        continue-on-error: true
-
-      - name: Style (black --check) — non-blocking
-        if: steps.detect.outputs.has_py == 'true'
-        run: black --check .
-        continue-on-error: true
-
-      - name: Tests (pytest) — only if tests exist
-        if: steps.detect.outputs.has_py == 'true' && hashFiles('tests/**') != ''
-        run: pytest -q
+          use-quiet-mode: 'yes'
+          config-file: '.github/mlc_config.json'
